@@ -10,6 +10,7 @@ public class Spiral {
 
 		// 5. Set your robot's pen down 
 		bob.penDown();
+		bob.sparkle();
 		// 3. Set the robot to go at max speed (100)
 		bob.setSpeed(100);
 		// 4. Use a for loop to repeat steps #7 to #8, 75 times
