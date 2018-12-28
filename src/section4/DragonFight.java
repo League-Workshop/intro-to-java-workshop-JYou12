@@ -13,8 +13,12 @@ public class DragonFight {
 		ImageIcon dragon = new ImageIcon("src/section4/dragonPicture.jpg");		
 		
 		JOptionPane.showMessageDialog(null, "Defeat the dragon to take its treasure!", "Dragon Fighter", 0, dragon);
+	
+
+		
 	int playerHealth = 100;
 	int dragonHealth = 100;
+	
 	int playerDamage;
 	int dragonDamage;
 		
@@ -35,10 +39,18 @@ public class DragonFight {
 		}
 		
 		int dd = random.nextInt(25);
-
-		dragonDamage = dd;
+		int attack = random.nextInt(10);
+		if (attack >= 7) {
+		dragonDamage = 75;
 		playerHealth -= dragonDamage;
-		
+		}else if (attack >= 9) {
+			dragonHealth = 500;
+			dragonDamage = 99;
+			
+		}else{
+			dragonDamage = dd += 1;
+			playerHealth -= dragonDamage;
+		}
 		if (Attack.equalsIgnoreCase("Boom")) {
 			
 			dragonHealth = 0;
