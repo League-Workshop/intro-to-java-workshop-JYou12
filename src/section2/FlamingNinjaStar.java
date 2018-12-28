@@ -13,14 +13,18 @@ public class FlamingNinjaStar {
 		
 		// 1. Make a new robot, and set it's pen down.
 		Robot bob = new Robot("batman");
-		Robot sally = new Robot("vic");
+		Robot sally = new Robot("mini");
 		bob.setX(450);
 		bob.setY(200);
 		bob.penDown();
 		bob.miniaturize();
 		sally.sparkle();
 		sally.penDown();
+		sally.setX(450);
+		sally.setY(200);
 		sally.setSpeed(500);
+		sally.hide();
+		
 		
 		// *14. Use the methods setX and setY to move the ninja star into the center of the screen
 		

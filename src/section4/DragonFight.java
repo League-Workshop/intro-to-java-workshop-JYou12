@@ -34,7 +34,7 @@ public class DragonFight {
 			dragonHealth -= playerDamage;
 		}
 		
-		int dd = random.nextInt(75);
+		int dd = random.nextInt(25);
 
 		dragonDamage = dd;
 		playerHealth -= dragonDamage;
